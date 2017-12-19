@@ -123,11 +123,11 @@
           margin-right: -12px;
           padding-right: 21.5px;
         }
-        .column.story-thumb {
+        .left-story .story-thumb {
           padding-right: 36px;
         }
-        .story-thumb {
-          padding-right: 36px;
+        .right-story .story-thumb {
+          padding-left: 36px;
         }
         .social-icon img {
           padding-left: 66px;
@@ -135,6 +135,19 @@
       }
 
       @media only screen and (max-width:600px) {
+        #masthead .container .row {
+          padding: 6px!important;
+        }
+        .column.logo-wrapper {
+          padding: 0!important;
+        }
+        img.logo {
+          padding: 0!important;
+        }
+        .logo,
+        .logo-wrapper {
+          padding: 0!important;
+        }
         .calendar-row .column {
           background-color: #F7F7F7;
           border: 4px solid #8B2332;
@@ -152,6 +165,19 @@
         .upcoming-header .rborder {
           display: none!important;
           visibility: hidden;
+        }
+        .column.story-thumb {
+          padding: 16px 0;
+        }
+        .story-thumb {
+          padding: 16px 0;
+        }
+        .social-wrapper {
+          padding-bottom: 10px 6px!important;
+        }
+        .social-icon img {
+          padding-left: 41.25%;
+          padding-bottom: 14px;
         }
       }
     </style>
@@ -280,6 +306,7 @@
                                           </tr>
                                         </table>
                                       </div>
+                                      <!-- Repeatable calendar row -->
                                       <div class="calendar-row row" style="background-color: #FFFFFF; padding: 24px 36px; padding-bottom: 0; padding-top: 0;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
@@ -344,25 +371,29 @@
                                           </tr>
                                         </table>
                                       </div>
-                                      <div class="row" style="background-color: #FFFFFF; padding: 24px 36px;">
+                                      <!-- Left aligned story with thumb -->
+                                      <div class="left-story row" style="background-color: #FFFFFF; padding: 24px 36px; border-top: 2px solid #F4F3ED;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
                                             <td class="story-thumb column col-sm-12" width="320" style="width: 50%" align="left" valign="top"> <a href="https://www.du.edu/korbel/about/news/2017-pardis-takeaknee.html" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">
                             <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/84aebbad-0fdc-49b8-a9dd-bfdb07e6ac31.jpg" alt="What Take a Knee Means in Higher Ed" border="0" class="img__block" style="display: block; max-width: 100%;"/>
                         </span></a> </td>
                                             <td class="column col-sm-12" width="320" style="width: 50%" align="left" valign="top">
+                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Header</h3>
                                               <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">#takeaknee is redefining athletes as activists in popular culture.</p> <a href="" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;"><strong>Learn more</strong></span></a>                                              </td>
                                           </tr>
                                         </table>
                                       </div>
-                                      <div class="row" style="background-color: #FFFFFF; padding: 24px 36px;">
+                                      <!-- Right aligned story with thumb -->
+                                      <div class="right-story row" style="background-color: #FFFFFF; padding: 24px 36px; border-top: 2px solid #F4F3ED;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
+                                            <td class="column col-sm-12" width="320" style="width: 50%" align="left" valign="top">
+                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Another header</h3>
+                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">We're welcoming our new acting dean, join her for Breakfast with the Dean this week.</p> <a href="" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;"><strong>Join us</strong></span></a>                                              </td>
                                             <td class="story-thumb column col-sm-12" width="320" style="width: 50%" align="left" valign="top"> <a href="http://news.du.edu/meet-pardis-mahdavi/" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">
                             <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/cd957870-5adc-4f51-8181-e3cfac603ef1.jpg" alt="Pardis Mahdavi, Korbel&#39;s new acting Dean" border="0" class="img__block" style="display: block; max-width: 100%;"/>
                         </span></a> </td>
-                                            <td class="column col-sm-12" width="320" style="width: 50%" align="left" valign="top">
-                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">We're welcoming our new acting dean, join her for Breakfast with the Dean this week.</p> <a href="" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;"><strong>Join us</strong></span></a>                                              </td>
                                           </tr>
                                         </table>
                                       </div>
@@ -459,130 +490,199 @@
                             </tr>
                           </table> <![endif]--> </div>
                         <!-- Quotes -->
-                        <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
+                        <div class="knockout-quotes block" style="width: 100%;"> <!--[if mso | IE]>
                           <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                             <tr>
                               <td> <![endif]-->
                                 <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="block__row">
                                     <td class="block__cell" width="100%" align="left" valign="top">
-                                      <div class="blue-quote row" style="padding: 24px 36px; background-color: #0048A5;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                              <div class="quote block" style="width: 100%; color: #F7F7F7; letter-spacing: .375px;"> <!--[if mso | IE]>
-                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr class="block__row">
-                                                          <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance to work hard
-                                                            at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
+                                        <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                          <tr>
+                                            <td> <![endif]-->
+                                              <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr class="block__row">
+                                                  <td class="block__cell" width="100%" align="left" valign="top">
+                                                    <div class="blue-quote row" style="padding: 24px 36px; background-color: #0048A5;">
+                                                      <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                                        <tr class="row__row">
+                                                          <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
+                                                            <div class="quote block" style="width: 100%; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
+                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                          </td>
                                                         </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                              <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #F7F7F7; letter-spacing: .375px;"> <!--[if mso | IE]>
-                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr class="block__row">
-                                                          <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
-                                                        </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                            </td>
+                                                      </table>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </table> <!--[if mso | IE]> </td>
                                           </tr>
-                                        </table>
-                                      </div>
+                                        </table> <![endif]--> </div>
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;">
+                                      <!--[if mso | IE]>
+                                        <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                          <tr>
+                                            <td> <![endif]-->
+                                              <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr class="block__row">
+                                                  <td class="block__cell" width="100%" align="left" valign="top">
+                                                    <div class="red-quote row" style="padding: 24px 36px; background-color: #8B2332;">
+                                                      <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                                        <tr class="row__row">
+                                                          <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
+                                                            <div class="quote block" style="width: 100%; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
+                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </table> <!--[if mso | IE]> </td>
+                                          </tr>
+                                        </table> <![endif]--> </div>
                                     </td>
                                   </tr>
                                 </table> <!--[if mso | IE]> </td>
                             </tr>
                           </table> <![endif]--> </div>
-                        <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
+                        <div class="light-quotes block" style="width: 100%;"> <!--[if mso | IE]>
                           <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                             <tr>
                               <td> <![endif]-->
                                 <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="block__row">
                                     <td class="block__cell" width="100%" align="left" valign="top">
-                                      <div class="red-quote row" style="padding: 24px 36px; background-color: #8B2332;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                              <div class="quote block" style="width: 100%; color: #F7F7F7; letter-spacing: .375px;"> <!--[if mso | IE]>
-                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr class="block__row">
-                                                          <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance to work hard
-                                                            at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
+                                        <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                          <tr>
+                                            <td> <![endif]-->
+                                              <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr class="block__row">
+                                                  <td class="block__cell" width="100%" align="left" valign="top">
+                                                    <div class="red-text-quote row" style="padding: 24px 36px; background-color: #F4F3ED;">
+                                                      <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                                        <tr class="row__row">
+                                                          <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
+                                                            <div class="quote block" style="width: 100%; color: #7E0026;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
+                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #7E0026;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                          </td>
                                                         </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                              <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #F7F7F7; letter-spacing: .375px;"> <!--[if mso | IE]>
-                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr class="block__row">
-                                                          <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
-                                                        </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                            </td>
+                                                      </table>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </table> <!--[if mso | IE]> </td>
                                           </tr>
-                                        </table>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </table> <!--[if mso | IE]> </td>
-                            </tr>
-                          </table> <![endif]--> </div>
-                        <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
-                          <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                            <tr>
-                              <td> <![endif]-->
-                                <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr class="block__row">
-                                    <td class="block__cell" width="100%" align="left" valign="top">
-                                      <div class="tan-quote row" style="padding: 24px 36px; background-color: #F4F3ED;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                              <div class="quote block" style="width: 100%; color: #7E0026;"> <!--[if mso | IE]>
-                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr class="block__row">
-                                                          <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance to work hard
-                                                            at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                        </table> <![endif]--> </div>
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;">
+                                      <!--[if mso | IE]>
+                                        <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                          <tr>
+                                            <td> <![endif]-->
+                                              <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr class="block__row">
+                                                  <td class="block__cell" width="100%" align="left" valign="top">
+                                                    <div class="blue-text-quote row" style="padding: 24px 36px; background-color: #F4F3ED;">
+                                                      <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                                        <tr class="row__row">
+                                                          <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
+                                                            <div class="quote block" style="width: 100%; color: #0048A5;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
+                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #0048A5;"> <!--[if mso | IE]>
+                                                              <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                                                                <tr>
+                                                                  <td> <![endif]-->
+                                                                    <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tr class="block__row">
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                      </tr>
+                                                                    </table> <!--[if mso | IE]> </td>
+                                                                </tr>
+                                                              </table> <![endif]--> </div>
+                                                          </td>
                                                         </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                              <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #7E0026;"> <!--[if mso | IE]>
-                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr class="block__row">
-                                                          <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
-                                                        </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                            </td>
+                                                      </table>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </table> <!--[if mso | IE]> </td>
                                           </tr>
-                                        </table>
-                                      </div>
+                                        </table> <![endif]--> </div>
                                     </td>
                                   </tr>
                                 </table> <!--[if mso | IE]> </td>
@@ -608,6 +708,15 @@
                                 <table class="container__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="container__row">
                                     <td class="container__cell" width="100%" align="left" valign="top">
+                                      <div class="social-intro row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; font-size: 24px; margin: 20px 0 24px; margin-bottom: 0; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">Keep in touch. Follow us:</h3>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
                                       <div class="social-wrapper row" style="padding: 24px 0; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
