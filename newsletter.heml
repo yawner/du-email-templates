@@ -4,7 +4,7 @@
         <subject>@Korbel Upcoming Events</subject>
         <style>
         body {
-            background-image: url('https://www.du.edu/_duresources/foundation/images/arrow-pattern.png');
+            background: #f7f7fa;
             background-repeat: repeat;
         }
         container {
@@ -12,14 +12,10 @@
             line-height: 1.382;
             max-width: 640px;
         }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
             color: #2b2a2a;
             line-height: 1.1;
+            text-align: left;
         }
         h1 {
             font-size: 48px;
@@ -33,9 +29,12 @@
             font-size: 24px;
             margin: 20px 0 24px;
         }
-        p,
-        li {
+        p, li {
             color: #5b5a5a;
+            text-align: left;
+        }
+        ul {
+            margin: 24px 30px;
         }
         a {
             color: #0048a5;
@@ -45,11 +44,35 @@
             border-radius: 2px;
             margin-top: 16px;
             margin-bottom: 16px;
-            padding: 11.5px 16px 12.5px 16px;
+            padding: 12px 16px 12.5px 16px;
         }
-        .h1-rule,
-        .h2-rule,
+        .h1-rule {
+            box-shadow: 0 12px 0 0 #fff,
+            114px 24px 0 0 #fff,
+            0 20px 0 0 #2B2A2A;
+            -moz-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 20px 0 0 #2B2A2A;
+            -ms-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 20px 0 0 #2B2A2A;
+            -o-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 20px 0 0 #2B2A2A;
+            margin-bottom: 54px;
+            padding-bottom: 14px;
+        }
+        .h2-rule {
+            box-shadow: 0 12px 0 0 #fff,
+            114px 24px 0 0 #fff,
+            0 18px 0 0 #2B2A2A;
+            -moz-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 18px 0 0 #2B2A2A;
+            -ms-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 18px 0 0 #2B2A2A;
+            -o-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 18px 0 0 #2B2A2A;
+            margin-bottom: 54px;
+            padding-bottom: 14px;
+        }
         .h3-rule {
+            box-shadow: 0 12px 0 0 #fff,
+            114px 24px 0 0 #fff,
+            0 16px 0 0 #2B2A2A;
+            -moz-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 16px 0 0 #2B2A2A;
+            -ms-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 16px 0 0 #2B2A2A;
+            -o-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 16px 0 0 #2B2A2A;
             margin-bottom: 54px;
             padding-bottom: 14px;
         }
@@ -87,6 +110,26 @@
         .logo-wrapper {
             padding-right: 72px;
         }
+        /* Intro */
+        .intro .week {
+            font-weight: 100;
+        }
+        .morning {
+            color: #0048a5;
+            font-size: 42px;
+            line-height: 1.1;
+            margin-left: -36px;
+            padding-left: 21px;
+            position: relative;
+        }
+        .morning .banner {
+            background: #0048a5;
+            color: #fdb813 !important;
+            font-weight: 100 !important;
+            margin-bottom: 12px;
+            margin-left: -42px;
+            padding: 21px 21px 18px 42px;
+        }
         /* Events section */
         .events-header {
             padding-bottom: 36px;
@@ -98,20 +141,12 @@
             letter-spacing: -.5px;
             text-align: left;
         }
-        .calendar-row {
+        .calendar-col, .calendar-row {
             padding-top: 0;
             padding-bottom: 0;
         }
-        .calendar-row .upcoming-body {
-            border-right-width: 0;
-        }
-        .calendar-row .3rd-col {
-            border-right-color: #8b2332;
-            border-right-style: solid;
-            border-right-width: 4px;
-        }
-        .upcoming-header {
-            background-color: #8b2332;
+        .calendar-col .upcoming-header, .calendar-row .upcoming-header {
+            background: #8b2332;
             color: #fff;
             display: block;
             font-size: 22.5px;
@@ -120,55 +155,142 @@
             padding: 16px 0 16px 16px;
             text-align: center;
         }
-        .3rd-col .upcoming-header time {
-            border-right-width: 0;
-        }
-        .upcoming-body {
-            background-color: #f7f7f7;
-            border: 4px solid #8b2332;
-            border-top-width: 0;
-            display: table-cell;
-            margin: 0;
-            height: 224px;
-            padding: 16px;
+        .calendar-col .column, .calendar-row .column {
+            background: #f7f7f7;
             text-align: center;
-            width: 100%;
         }
-        .upcoming-body h3 {
+        .calendar-col .upcoming-body, .calendar-row .upcoming-body {
+            background: #f7f7f7;
+            display: block;
+            text-align: center;
+        }
+        .calendar-col .upcoming-body h3, .calendar-row .upcoming-body h3 {
             color: #8b2332;
             font-size: 21px;
+            padding: 0 8px;
+            text-align: center;
+        }
+        .calendar-col .upcoming-body p, .calendar-row .upcoming-body p {
+            text-align: center;
+        }
+        .calendar-col .column {
+            border-bottom: 4px solid #8b2332;
+            border-left: 4px solid #8b2332;
+        }
+        .calendar-col .third-col {
+            border-right-color: #8b2332;
+            border-right-style: solid;
+            border-right-width: 4px;
+        }
+        .calendar-col .upcoming-body {
+            margin: 0;
+            min-width: 152px;
+            height: 264px;
+            padding: 12px 0;
+        }
+        .calendar-row .upcoming-header {
+            padding-top: 12px;
+        }
+        .calendar-row .upcoming-body {
+            border-bottom: 4px solid #8b2332;
+            border-left: 4px solid #8b2332;
+            border-right: 4px solid #8b2332;
+        }
+        .calendar-row .upcoming-body h3 {
+            margin: 0;
+            padding-top: 20px;
+            padding-bottom: 24px;
+        }
+        .calendar-row .upcoming-body p {
+            margin: 0;
+            padding-top: 4px;
+            padding-bottom: 24px;
         }
         /* Stories/news section */
         .left-story, .right-story {
             border-top: 2px solid #f4f3ed;
         }
+        .left-story .story-thumb {
+            padding-right: 36px;
+        }
+        .right-story .story-thumb a img {
+            padding-left: 36px;
+        }
+        /* News & media */
+        .news .row, .media-roundup .row {
+            padding: 0;
+        }
+        .news .section-divider, .media-roundup .section-divider {
+            padding: 30px 0 24px;
+        }
+        .news h3 {
+            background: #7e0032;
+            color: #fff;
+            font-weight: 100;
+            letter-spacing: .5px;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 16px 18px;
+        }
+        .media-roundup h3 {
+            background: #0048a5;
+            color: #fff;
+            font-weight: 100;
+            letter-spacing: .5px;
+            margin-bottom: 4px;
+            margin-top: 0;
+            padding: 16px 18px;
+        }
+        .media-roundup .lead {
+            background: #fff;
+            margin: 0;
+            padding: 16px 18px;
+        }
+        .news-list, .media-list {
+            background: #eae9e5;
+            margin: 0;
+            padding: 3px 24px 21px;
+        }
+        .news-list li, .media-list li {
+            background: #fafafa;
+            list-style: none;
+            margin-top: 18px;
+            padding: 12px;
+        }
         /* Colored pull quotes */
         .pull-quote {
-            font-family: "Garamond", "Palatino", "Times", "Georgia", serif;
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
             font-size: 30px;
             font-style: italic;
             font-weight: 100;
             line-height: 1.382;
         }
-        .pull-quote column {
+        .pull-quote .column {
             padding-left: 16px;
             padding-right: 16px;
         }
+        .quote {
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
+        }
         .quote-source {
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
             margin-top: 24px;
         }
         .lquote {
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
             color: #FDB813;
             font-weight: 600;
             margin-left: -18px;
             margin-right: 12px;
         }
         .rquote {
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
             color: #FDB813;
             font-weight: 600;
             margin-left: 6px;
         }
         .emdash {
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
             color: #FDB813;
             font-weight: 600;
         }
@@ -231,10 +353,11 @@
         }
         .social-wrapper {
             background: #313133;
-            padding: 24px 0;
+            padding: 24px 36px;
         }
         .social-icon img {
             height: 48px;
+            padding-left: 66px;
             width: 48px;
         }
         .info-wrapper {
@@ -244,6 +367,9 @@
         </style>
         <style heml-embed>
         /* These styles aren't inlined */
+        a {
+            color: #0048a5;
+        }
         .h1-rule {
             box-shadow: 0 12px 0 0 #fff,
             114px 24px 0 0 #fff,
@@ -268,52 +394,56 @@
             -ms-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 16px 0 0 #2B2A2A;
             -o-box-shadow: 0 12px 0 0 #fff, 114px 24px 0 0 #fff, 0 16px 0 0 #2B2A2A;
         }
+        .pull-quote, .quote, .quote-source, .lquote, .rquote, .emdash {
+            font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
+        }
         /* Media Queries */
         @media only screen and (min-width:600px) {
-            .upcoming-header .rborder {
+            .calendar-col .upcoming-header .rborder {
                 border-right: 1px solid #f7f7f7;
-                margin-right: -12px;
-                padding-right: 21.5px;
-            }
-            .left-story .story-thumb {
-                padding-right: 36px;
-            }
-            .right-story .story-thumb {
-                padding-left: 36px;
-            }
-            .social-icon img {
-                padding-left: 66px;
+                float: right;
+                width: 1px;
+                height: 33px;
+                padding-left: 2px;
+                margin-right: -2px;
+                margin-top: -6px;
             }
         }
         @media only screen and (max-width:600px) {
+            button {
+                padding: 14px 18px 14.5px 18px !important;
+            }
             #masthead .container .row {
                 padding: 6px !important;
             }
             .logo, .logo-wrapper {
                 padding: 0 !important;
             }
-            .calendar-row column {
-                background-color: #f7f7f7;
-                border: 4px solid #8b2332;
-                text-align: center;
+            .morning p {
+                font-size: 24px !important;
             }
-            .calendar-row .upcoming-body {
-                border: none !important;
+            .calendar-col .column {
+                border-right: 4px solid #8b2332;
+            }
+            .calendar-col .upcoming-body {
                 height: auto !important;
             }
-            .upcoming-header .rborder {
+            .calendar-col .upcoming-header .rborder {
                 display: none !important;
                 visibility: hidden;
             }
-            .story-thumb {
-                padding: 16px 0;
+            .left-story .story-thumb, .right-story .story-thumb, .right-story .story-thumb a img, .left-story .story-thumb a img {
+                padding: 16px 0 !important;
+            }
+            .pull-quote {
+                font-size: 21px !important;
             }
             .social-wrapper {
                 padding-bottom: 10px 6px !important;
             }
-            .social-icon img {
-                padding-bottom: 14px;
-                padding-left: 41.25%;
+            .social-wrapper .social-icon img {
+                padding-bottom: 24px;
+                padding-left: 41.25% !important;
             }
         }
         </style>
@@ -324,7 +454,7 @@
             <container>
                 <row>
                     <column class="logo-wrapper">
-                        <img class="logo" src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/27905e21-79d9-4b9f-8517-ab6c7ee34d06.jpg" alt="University of Denver Josef Korbel School of International Studies Logo" />
+                        <img class="logo" src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/josef-korbel-logos-hires-07.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=doQKfmFlJvqfDPkHi%2BTvI3QvjtU%3D" alt="University of Denver Josef Korbel School of International Studies Logo" width="496" height="109.117" />
                     </column>
                 </row>
             </container>
@@ -332,6 +462,23 @@
         <container>
             <!-- Intro & funnel -->
             <block class="intro">
+                <!-- Morning banner -->
+                <row class="greeting-banner">
+                    <column>
+                        <block class="morning">
+                            <p class="banner">Good morning 🌄!</p>
+                            <p>Here's what you need to know to start your week:</p>
+                        </block>
+                    </column>
+                </row>
+                <!-- Morning greeting -->
+                <row class="greeting">
+                    <column>
+                        <block class="morning">
+                            <p>Good morning 🌄! Here's what you need to know to start your week:</p>
+                        </block>
+                    </column>
+                </row>
                 <row>
                     <column>
                         <h1 class="h1-rule">@Korbel: Week of xxxx</h1>
@@ -343,7 +490,7 @@
                 </row>
                 <row>
                     <column>
-                        <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/c8d86a99-a217-4f2f-ad55-5b640cce72e7.jpg" alt="Event at Korbel">
+                        <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/c8d86a99-a217-4f2f-ad55-5b640cce72e7.jpg?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=Gz%2FMJR%2FbROqhLHddnYE2jCnauWo%3D" alt="Event at Korbel" width="568" height="243.167" />
                     </column>
                 </row>
                 <row class="section-divider">
@@ -359,45 +506,85 @@
                         <p>We're always hosting events—come see what we're up to this week!</p>
                     </column>
                 </row>
-                <!-- Repeatable calendar row -->
-                <row class="calendar-row">
-                    <column>
-                        <span class="upcoming-header">
-                            November 11<span class="rborder"></span>
-                        </span>
-                        <span class="upcoming-body">
-                            <h3>China Town Hall</h3>
-                            <p>CCUSC
-                                <br />12-2pm</p>
-                        </span>
-                    </column>
-                    <column>
-                        <span class="upcoming-header">
-                            November 26<span class="rborder"></span>
-                        </span>
-                        <span class="upcoming-body">
-                            <h3>Art, Amnesia &amp; Memory China's Battle with History</h3>
-                            <p>CCUSC
-                                <br />12-2pm</p>
-                        </span>
-                    </column>
-                    <column class="3rd-col">
-                        <span class="upcoming-header">
-                            December 12
-                        </span>
-                        <span class="upcoming-body">
-                            <h3>Korbel in DC/Geneva/Vienna</h3>
-                            <p>Info Session
-                                <br />12-2pm</p>
-                        </span>
-                    </column>
-                </row>
-                </row>
-                <row class="upcoming-footer">
-                    <column>
-                        <p class="callout">That's just a few of our events. Make sure to check our <a href="https://www.du.edu/korbel/about/events/index.html">full calendar</a>.</p>
-                    </column>
-                </row>
+                <!-- Repeatable mailchimp calendar row columns -->
+                <div class="mc-calendar-row">
+                    <row class="calendar-col">
+                        <column>
+                            <span class="upcoming-header">
+                                November 11<span class="rborder"></span>
+                            </span>
+                            <div class="upcoming-body">
+                                <h3>Really long test title that will mess up the layout, with Dr. Cornel West</h3>
+                                <p>CCUSC
+                                    <br />12-2pm</p>
+                            </div>
+                        </column>
+                        <column>
+                            <span class="upcoming-header">
+                                November 26<span class="rborder"></span>
+                            </span>
+                            <div class="upcoming-body">
+                                <h3>Art, Amnesia &amp; Memory China's Battle with History</h3>
+                                <p>CCUSC
+                                    <br />12-2pm</p>
+                            </div>
+                        </column>
+                        <column class="third-col">
+                            <span class="upcoming-header">
+                                December 12
+                            </span>
+                            <div class="upcoming-body">
+                                <h3>Korbel in DC/Geneva/Vienna</h3>
+                                <p>Info Session
+                                    <br />12-2pm</p>
+                            </div>
+                        </column>
+                    </row>
+                </div>
+                <!-- Repeatable regroup calendar rows -->
+                <div class="regroup-calendar-row">
+                    <row class="calendar-row">
+                        <column large="12" small="12">
+                            <span class="upcoming-header">
+                                November 11
+                            </span>
+                            <div class="upcoming-body">
+                                <h3>Really long test title that will mess up the layout, with Dr. Cornel West</h3>
+                                <p>CCUSC
+                                    <br />12-2pm</p>
+                            </div>
+                        </column>
+                    </row>
+                    <row class="calendar-row">
+                        <column large="12" small="12">
+                            <span class="upcoming-header">
+                                November 26
+                            </span>
+                            <div class="upcoming-body">
+                                <h3>Art, Amnesia &amp; Memory China's Battle with History</h3>
+                                <p>CCUSC
+                                    <br />12-2pm</p>
+                            </div>
+                        </column>
+                    </row>
+                    <row class="calendar-row">
+                        <column class="third-col" large="12" small="12">
+                            <span class="upcoming-header">
+                                December 12
+                            </span>
+                            <div class="upcoming-body">
+                                <h3>Korbel in DC/Geneva/Vienna</h3>
+                                <p>Info Session
+                                    <br />12-2pm</p>
+                            </div>
+                        </column>
+                    </row>
+                    <row class="upcoming-footer">
+                        <column>
+                            <p class="callout">Check our <a href="https://www.du.edu/korbel/about/events/index.html">events calendar</a> for more info and rsvp links.</p>
+                        </column>
+                    </row>
+                </div>
                 <row class="section-divider">
                     <column>
                     </column>
@@ -408,20 +595,19 @@
                 <row>
                     <column>
                         <h2 class="h2-rule">Recent Stories</h2>
-                        <p>These stories deserve your attention.</p>
                     </column>
                 </row>
                 <!-- Left aligned story with thumb -->
                 <row class="left-story">
                     <column class="story-thumb" large="6" small="12">
                         <a href="https://www.du.edu/korbel/about/news/2017-pardis-takeaknee.html" target="_blank">
-                            <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/84aebbad-0fdc-49b8-a9dd-bfdb07e6ac31.jpg" alt="What Take a Knee Means in Higher Ed">
+                            <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/84aebbad-0fdc-49b8-a9dd-bfdb07e6ac31.jpg?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=hUMM83lWJEp%2Fgr6bHEoG5jVVy18%3D" alt="News story thumbnail" width="266" height="216.767" />
                         </a>
                     </column>
                     <column large="6" small="12">
                         <h3>Header</h3>
                         <p>#takeaknee is redefining athletes as activists in popular culture.</p>
-                        <a href="" target="_blank"><strong>Learn more</strong></a>
+                        <a href="https://www.du.edu/korbel/about/news/2017-pardis-takeaknee.html" target="_blank"><strong>Learn more</strong></a>
                     </column>
                 </row>
                 <!-- Right aligned story with thumb -->
@@ -429,12 +615,45 @@
                     <column large="6" small="12">
                         <h3>Another header</h3>
                         <p>We're welcoming our new acting dean, join her for Breakfast with the Dean this week.</p>
-                        <a href="" target="_blank"><strong>Join us</strong></a>
+                        <a href="http://news.du.edu/meet-pardis-mahdavi/" target="_blank"><strong>Join us</strong></a>
                     </column>
                     <column class="story-thumb" large="6" small="12">
                         <a href="http://news.du.edu/meet-pardis-mahdavi/" target="_blank">
-                            <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/cd957870-5adc-4f51-8181-e3cfac603ef1.jpg" alt="Pardis Mahdavi, Korbel's new acting Dean">
+                            <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/cd957870-5adc-4f51-8181-e3cfac603ef1.jpg?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=C2QK2ISGbC4vz2ewVLBzhgG%2F9qY%3D" alt="News story thumbnail" width="266" height="216.767" />
                         </a>
+                    </column>
+                </row>
+                <row class="section-divider">
+                    <column>
+                    </column>
+                </row>
+            </block>
+            <!-- News row with repeatable list items -->
+            <block class="news">
+                <row>
+                    <column>
+                        <h3>News</h3>
+                        <ul class="news-list">
+                            <li>Floyd Ciruli was awarded the Denver Mayor’s Award for Leadership in the Arts for his 30 years of support for the creation and voter approval of the Scientific and Cultural Facilities District (SCFD). Read the announcement and watch the video <a href="http://www.artsandvenuesdenver.com/events-programs/mayors-awards/mayors-awards-for-excellence-in-arts-culture-2017-winners">here</a>.</li>
+                            <li>Another test. Denver Mayor’s Award for Leadership in the Arts for his 30 years of support for the creation and voter approval of the Scientific and Cultural Facilities District (SCFD). Read the announcement and watch the video <a href="http://www.artsandvenuesdenver.com/events-programs/mayors-awards/mayors-awards-for-excellence-in-arts-culture-2017-winners">here</a>.</li>
+                        </ul>
+                    </column>
+                </row>
+                <row class="section-divider">
+                    <column>
+                    </column>
+                </row>
+            </block>
+            <!-- Media roundup with repeatable list items -->
+            <block class="media-roundup">
+                <row>
+                    <column>
+                        <h3>Media Roundup</h3>
+                        <p class="lead">Visit our <a href="http://www.du.edu/korbel/about/news/index.html" title="Newsroom" target="_blank">Newsroom</a> for the School's news stories and press releases, and <a href="http://www.du.edu/korbel/about/news/inthenews.html" title="Faculty in the news" target="_blank">Josef Korbel School and Faculty in the News</a>. Send your Korbel School media mentions to <a href="mailto: korbel.comms@du.edu" title="Email Korbel Communications" target="_blank">Korbel.Comms@du.edu</a>. Online links are included when available.</p>
+                        <ul class="media-list">
+                            <li>“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510">Trump’s Attacks on #TakeaKnee and DACA Spurred Hundreds of Protests in October</a>,” Erica Chenoweth, Washington Post, December 1, 2017</li>
+                            <li>“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510">New test item that is different</a>,” Erica Chenoweth, Washington Post, December 1, 2017</li>
+                        </ul>                    
                     </column>
                 </row>
                 <row class="section-divider">
@@ -449,37 +668,16 @@
                         <h2 class="h2-rule">Korbel Careers</h2>
                         <p>This week's newest jobs and internships for students and alumni.</p>
                         <h3>Top Job Openings</h3>
-                        <ol>
+                        <ul>
                             <li><strong>FBI</strong>, Washington, DC, Internal Processes Reviewer</li>
                             <li><strong>Boulder Policy Peeps</strong>, Boulder, CO, Policy Analyst</li>
                             <li><strong>Mega Millionaire</strong>, Beijing, Rich Dude</li>
-                        </ol>
-                        <h3>Internship of the Week</h3>
-                        <ol>
-                            <li><strong>Apple Inc.</strong>, San Francisco, CA, Global Engagement Strategists</li>
-                        </ol>
-                        <p class="callout"> Want more? Browse our <a href="https://www.du.edu/pioneercareers" target="_blank">full job listings</a>.</p>
-                    </column>
-                </row>
-                <row class="section-divider">
-                    <column>
-                    </column>
-                </row>
-            </block>
-            <!-- News -->
-            <block class="news">
-                <row>
-                    <column>
-                        <h2 class="h2-rule">In the News</h2>
-                        <p>Korbel Faculty are in the news nearly every day. Here's a summary of the week's headlines in which they were featured. </p>
-                        <ul>
-                            <li>MSNBC</li>
-                            <li>NYT</li>
-                            <li>Politico</li>
-                            <li>Fox</li>
-                            <li>Etc</li>
                         </ul>
-                        <p class="callout">Need older news? View our <a href="https://www.du.edu/korbel/about/news/inthenews.html" target="_blank">archives</a>.</p>
+                        <h3>Internship of the Week</h3>
+                        <ul>
+                            <li><strong>Apple Inc.</strong>, San Francisco, CA, Global Engagement Strategists</li>
+                        </ul>
+                        <p class="callout"> Want more? Browse our <a href="https://www.du.edu/pioneercareers" target="_blank">full job listings</a>.</p>
                     </column>
                 </row>
                 <row class="section-divider">
@@ -552,53 +750,108 @@
         <!-- Footer -->
         <block id="footer">
             <container>
-                <row class="social-intro">
-                    <column>
-                        <h3>Keep in touch. Follow us:</h3>
-                    </column>
-                </row>
-                <row class="social-wrapper">
-                    <column>
-                        <a href="https://www.facebook.com/josefkorbel" target="_blank" class="social-icon">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-facebook-96.png" alt="Facebook icon" width="48" height="48">
-                        </a>
-                    </column>
-                    <column>
-                        <a href="https://twitter.com/josefkorbel" target="_blank" class="social-icon">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-twitter-96.png" alt="Twitter icon" width="48" height="48">
-                        </a>
-                    </column>
-                    <column>
-                        <a href="https://www.instagram.com/thejosefkorbelschool/" target="_blank" class="social-icon">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-instagram-96.png" alt="Instagram icon" width="48" height="48">
-                        </a>
-                    </column>
-                    <column>
-                        <a href="https://www.du.edu/korbel" target="_blank" class="social-icon">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-link-96.png" alt="Josef Korbel School of International Studies website link icon" width="48" height="48">
-                        </a>
-                    </column>
-                </row>
-                <row>
-                    <column>
-                        <hr>
-                    </column>
-                </row>
-                <row class="info-wrapper">
-                    <column>
-                        <p>
-                        Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
-                        <br> *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
-                        <br>
-                        <br>
-                        <strong>Our mailing address is:</strong>
-                        <br> *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
-                        <br>
-                        <br> Want to change how you receive these emails?
-                        <br> You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.
-                        </p>
-                    </column>
-                </row>
+                <!-- Mailchimp footer with merge tags and list unsubscribe -->
+                <div class="mc-footer">
+                    <row class="social-intro">
+                        <column>
+                            <h3>Keep in touch. Follow us:</h3>
+                        </column>
+                    </row>
+                    <row class="social-wrapper">
+                        <column>
+                            <a href="https://www.facebook.com/josefkorbel" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-facebook-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=gj%2BsRwzm0zsXggfgxOscgQKT8XU%3D" alt="Facebook icon" width="48" height="48" />
+                            </a>
+                        </column>
+                        <column>
+                            <a href="https://twitter.com/josefkorbel" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-twitter-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=RkpBoOPO%2BglDj92vL5ovp7FXGmQ%3D" alt="Twitter icon" width="48" height="48" />
+                            </a>
+                        </column>
+                        <column>
+                            <a href="https://www.instagram.com/thejosefkorbelschool/" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-instagram-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=ZU%2B4d6y3iJGG3P1Wbn09BqJJRy4%3D" alt="Instagram icon" width="48" height="48" />
+                            </a>
+                        </column>
+                        <column>
+                            <a href="https://www.du.edu/korbel" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-link-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=e%2BouW4DeXDMnEPxvWhCHltvpjQ4%3D" alt="Website link icon" width="48" height="48" />
+                            </a>
+                        </column>
+                    </row>
+                    <row>
+                        <column>
+                            <hr>
+                        </column>
+                    </row>
+                    <row class="info-wrapper">
+                        <column>
+                            <p>
+                            ©*|CURRENT_YEAR|* Josef Korbel School of International Studies, All rights reserved.
+                            <br> *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+                            <br>
+                            <br>
+                            <strong>Our mailing address is:</strong>
+                            <br> Anna and John J. Sie International Relations Complex
+                            <br> University of Denver
+                            <br> 2201 S. Gaylord St.
+                            <br> Denver, CO 80208
+                            <br>
+                            <br> Want to change how you receive these emails?
+                            <br> You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.
+                            </p>
+                        </column>
+                    </row>
+                </div>
+                <!-- Regroup Footer (no mailchimp tags or unsubscribe) -->
+                <div class="regroup-footer">
+                    <row class="social-intro">
+                        <column>
+                            <h3>Keep in touch. Follow us:</h3>
+                        </column>
+                    </row>
+                    <row class="social-wrapper">
+                        <column>
+                            <a href="https://www.facebook.com/josefkorbel" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-facebook-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=gj%2BsRwzm0zsXggfgxOscgQKT8XU%3D" alt="Facebook icon" width="48" height="48" />
+                            </a>
+                        </column>
+                        <column>
+                            <a href="https://twitter.com/josefkorbel" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-twitter-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=RkpBoOPO%2BglDj92vL5ovp7FXGmQ%3D" alt="Twitter icon" width="48" height="48" />
+                            </a>
+                        </column>
+                        <column>
+                            <a href="https://www.instagram.com/thejosefkorbelschool/" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-instagram-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=ZU%2B4d6y3iJGG3P1Wbn09BqJJRy4%3D" alt="Instagram icon" width="48" height="48" />
+                            </a>
+                        </column>
+                        <column>
+                            <a href="https://www.du.edu/korbel" target="_blank" class="social-icon">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-link-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&Expires=2147407200&Signature=e%2BouW4DeXDMnEPxvWhCHltvpjQ4%3D" alt="Website link icon" width="48" height="48" />
+                            </a>
+                        </column>
+                    </row>
+                    <row>
+                        <column>
+                            <hr>
+                        </column>
+                    </row>
+                    <row class="info-wrapper">
+                        <column>
+                            <p>
+                            ©2018 Josef Korbel School of International Studies, All rights reserved.
+                            <br>
+                            <br>
+                            <strong>Our mailing address is:</strong>
+                            <br> Anna and John J. Sie International Relations Complex
+                            <br> University of Denver
+                            <br> 2201 S. Gaylord St.
+                            <br> Denver, CO 80208
+                            </p>
+                        </column>
+                    </row>
+                </div>
             </container>
         </block>
     </body>
