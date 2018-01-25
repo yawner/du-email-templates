@@ -1,0 +1,15 @@
+<!-- Media roundup list -->
+<div class="media-roundup row" style="background-color:#FFFFFF;padding:24px 36px;padding-bottom:0;padding-top:0;" mc:hideable>
+    <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+        <tr class="row__row">
+            <td class="column col-sm-12" width="640" style="width:100%;" align="left" valign="top">
+                <h3 class="header h3" style="font-family:Helvetica, Arial, sans-serif;line-height:1.1;font-size:24px;margin:20px 0 24px;padding:16px 18px;color:#FFFFFF;font-weight:100;letter-spacing:.5px;margin-bottom:4px;background-color:#0048A5;">Media Roundup</h3>
+                <p class="lead text p" style="display:block;font-family:Helvetica, Arial, sans-serif;font-size:18px;line-height:1.382;color:#5B5A5A;background-color:#F7F7F7;margin:4px 0;padding:16px 18px;">Visit our <a class="a" href="http://www.du.edu/korbel/about/news/index.html" style="color:#0048A5;" target="_blank" title="Newsroom"><span class="a__text" style="color:#0048A5">Newsroom</span></a> for the School&#39;s news stories and press releases, and <span class="a__text" style="color:rgb(0, 72, 165)"><a class="a" href="http://www.du.edu/korbel/about/news/inthenews.html" style="color:#0048A5;" target="_blank" title="Faculty in the news">Josef Korbel School and Faculty in the News</a>.</span> Send your Korbel School media mentions to <a class="a" href="mailto:korbel.comms@du.edu" style="color:#0048A5;" target="_blank" title="Email Korbel Communications"><span class="a__text" style="color:#0048A5">Korbel.Comms@du.edu</span></a>. Online links are included when available.</p>
+                <ul class="media-list text ul" style="margin-left:20px;margin-top:16px;margin-bottom:16px;list-style-type:disc;color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:18px;line-height:1.382;padding:18px 24px;margin:0 0 36px;padding-top:2px;background-color:#EAE9E5;">
+                    <li class="text li" style="font-family:Helvetica, Arial, sans-serif;font-size:18px;line-height:1.382;color:#5B5A5A;padding:12px;list-style:none;background-color:#FAFAFA;margin-top:24px;" mc:repeatable><span class="a__text" style="color: #0048A5;" mc:edit="$media_link">“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510" class="a" style="color:#0048A5;">Trump’s Attacks on #TakeaKnee and DACA Spurred Hundreds of Protests in October</a>,”</span>&nbsp;<span mc:edit="$media_desc">Erica Chenoweth, Washington Post, December 1, 2017</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
