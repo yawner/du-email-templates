@@ -82,6 +82,14 @@
       }
     </style>
     <style>
+      .a {
+        color: #0048A5;
+      }
+
+      .a .a__text {
+        color: #0048A5;
+      }
+
       .h1.header.h1-rule {
         box-shadow: 0 12px 0 0 #FFFFFF, 114px 24px 0 0 #FFFFFF, 0 20px 0 0 #2B2A2A;
         -o-box-shadow: 0 12px 0 0 #FFFFFF, 114px 24px 0 0 #FFFFFF, 0 20px 0 0 #2B2A2A;
@@ -117,24 +125,43 @@
         box-shadow: 0 12px 0 0 #FFFFFF, 114px 24px 0 0 #FFFFFF, 0 16px 0 0 #2B2A2A;
       }
 
+      .block.pull-quote .header,
+      .block.quote .header,
+      .block.quote-source .header {
+        font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
+      }
+
+      .block.pull-quote .text,
+      .block.quote .text,
+      .block.quote-source .text {
+        font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
+      }
+
+      .emdash,
+      .lquote,
+      .pull-quote,
+      .quote,
+      .quote-source,
+      .rquote {
+        font-family: "Garamond", "Palatino", "Times New Roman", "Times", "Georgia", serif;
+      }
+
       @media only screen and (min-width:600px) {
-        .upcoming-header .rborder {
+        .calendar-col .upcoming-header .rborder {
           border-right: 1px solid #F7F7F7;
-          margin-right: -12px;
-          padding-right: 21.5px;
-        }
-        .left-story .story-thumb {
-          padding-right: 36px;
-        }
-        .right-story .story-thumb {
-          padding-left: 36px;
-        }
-        .social-icon img {
-          padding-left: 66px;
+          float: right;
+          height: 33px;
+          margin-right: -2px;
+          margin-top: -6px;
+          padding-left: 2px;
+          width: 1px;
         }
       }
 
       @media only screen and (max-width:600px) {
+        .button .button__cell {
+          padding: 14px 18px 14.5px!important;
+        }
         #masthead .container .row {
           padding: 6px!important;
         }
@@ -148,36 +175,39 @@
         .logo-wrapper {
           padding: 0!important;
         }
-        .calendar-row .column {
-          background-color: #F7F7F7;
-          border: 4px solid #8B2332;
+        .morning .p.text {
+          font-size: 24px!important;
         }
-        .calendar-row .column .header {
-          text-align: center;
+        .calendar-col .column {
+          border-right: 4px solid #8B2332;
         }
-        .calendar-row .column .text {
-          text-align: center;
-        }
-        .calendar-row .upcoming-body {
-          border: none!important;
+        .calendar-col .upcoming-body {
           height: auto!important;
         }
-        .upcoming-header .rborder {
+        .calendar-col .upcoming-header .rborder {
           display: none!important;
           visibility: hidden;
         }
-        .column.story-thumb {
-          padding: 16px 0;
+        .left-story .story-thumb .a img,
+        .right-story .story-thumb .a img {
+          padding: 16px 0!important;
         }
-        .story-thumb {
-          padding: 16px 0;
+        .left-story .story-thumb,
+        .right-story .story-thumb {
+          padding: 16px 0!important;
+        }
+        .block.pull-quote .text {
+          font-size: 21px!important;
+        }
+        .pull-quote {
+          font-size: 21px!important;
         }
         .social-wrapper {
           padding-bottom: 10px 6px!important;
         }
-        .social-icon img {
-          padding-left: 41.25%;
-          padding-bottom: 14px;
+        .social-wrapper .social-icon img {
+          padding-left: 41.25%!important;
+          padding-bottom: 24px;
         }
       }
     </style>
@@ -189,9 +219,8 @@
        </o:OfficeDocumentSettings>
       </xml><![endif]-->
   </head>
-  <body class="body" style="background-image: url('https://www.du.edu/_duresources/foundation/images/arrow-pattern.png'); background-repeat: repeat; margin: 0; width: 100%;">
-    <table class="bodyTable" role="presentation" width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-image: url('https://www.du.edu/_duresources/foundation/images/arrow-pattern.png'); background-repeat: repeat; margin: 0;"
-      background="https://www.du.edu/_duresources/foundation/images/arrow-pattern.png">
+  <body class="body" style="background-color: #F7F7FA; background-repeat: repeat; margin: 0; width: 100%;">
+    <table class="bodyTable" role="presentation" width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #F7F7FA; background-repeat: repeat; margin: 0;" bgcolor="#F7F7FA">
       <tr>
         <td class="body__content" align="left" width="100%" valign="top" style="color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 16px; line-height: 20px;">
           <!-- Header -->
@@ -212,8 +241,8 @@
                                       <div class="row" style="padding: 24px 36px; background-color: #98002E;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
-                                            <td class="logo-wrapper column col-sm-12" width="640" style="padding-right: 72px;width: 100%" align="left" valign="top"> <img class="logo img__block" src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/27905e21-79d9-4b9f-8517-ab6c7ee34d06.jpg" alt="University of Denver Josef Korbel School of International Studies Logo"
-                                                border="0" style="display: block; max-width: 100%; padding-left: 24px;" /> </td>
+                                            <td class="logo-wrapper column col-sm-12" width="640" style="padding-right: 72px;width: 100%" align="left" valign="top"> <img class="logo img__block" src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/josef-korbel-logos-hires-07.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=doQKfmFlJvqfDPkHi%2BTvI3QvjtU%3D"
+                                                alt="University of Denver Josef Korbel School of International Studies Logo" width="496" height="109.117" border="0" style="display: block; max-width: 100%; padding-left: 24px;" /> </td>
                                           </tr>
                                         </table>
                                       </div>
@@ -242,6 +271,51 @@
                                 <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="block__row">
                                     <td class="block__cell" width="100%" align="left" valign="top">
+                                      <!-- Morning banner -->
+                                      <div class="row greeting-banner" style="background-color: #FFFFFF; padding: 24px 36px;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                              <div class="morning block" style="width: 100%; color: #0048A5; font-size: 42px; line-height: 1.1; padding-left: 21px; position: relative; margin-left: -36px;"> <!--[if mso | IE]>
+                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-left: 0" width="640" align="left">
+                                                  <tr>
+                                                    <td> <![endif]-->
+                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr class="block__row">
+                                                          <td class="block__cell" width="100%" align="left" valign="top" style="padding-left: 21px;">
+                                                            <p class="banner text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; background-color: #0048A5; margin-bottom: 12px; margin-left: -42px; padding: 21px 21px 18px 42px; font-size: 42px; line-height: 1.1; color: #FDB813; font-weight: 100;">Good morning 🌄!</p>
+                                                            <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; color: #0048A5; font-size: 42px; line-height: 1.1;">Here's what you need to know to start your week:</p>
+                                                          </td>
+                                                        </tr>
+                                                      </table> <!--[if mso | IE]> </td>
+                                                  </tr>
+                                                </table> <![endif]--> </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <!-- Morning greeting -->
+                                      <div class="row greeting" style="background-color: #FFFFFF; padding: 24px 36px;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                              <div class="morning block" style="width: 100%; color: #0048A5; font-size: 42px; line-height: 1.1; padding-left: 21px; position: relative; margin-left: -36px;"> <!--[if mso | IE]>
+                                                <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-left: 0" width="640" align="left">
+                                                  <tr>
+                                                    <td> <![endif]-->
+                                                      <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr class="block__row">
+                                                          <td class="block__cell" width="100%" align="left" valign="top" style="padding-left: 21px;">
+                                                            <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; color: #0048A5; font-size: 42px; line-height: 1.1;">Good morning 🌄! Here's what you need to know to start your week:</p>
+                                                          </td>
+                                                        </tr>
+                                                      </table> <!--[if mso | IE]> </td>
+                                                  </tr>
+                                                </table> <![endif]--> </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
                                       <div class="row" style="background-color: #FFFFFF; padding: 24px 36px;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
@@ -257,7 +331,7 @@
                                                     <td>
                                                       <table role="presentation" width="auto" align="center" border="0" cellspacing="0" cellpadding="0" class="button__table" style="margin: 0 auto; margin-bottom: 16px; margin-top: 16px;">
                                                         <tr>
-                                                          <td align="center" class="button__cell" style="background-color: #0048A5; border-radius: 2px; padding: 11.5px 16px 12.5px;" bgcolor="#0048A5"><a href="#" class="button__link" style="color: #FFFFFF; text-decoration: none; background-color: #0048A5; display: inline-block;"><span class="button__text" style="color: #FFFFFF; text-decoration: none;">Call to action</span></a></td>
+                                                          <td align="center" class="button__cell" style="background-color: #0048A5; border-radius: 2px; padding: 12px 16px 12.5px;" bgcolor="#0048A5"><a href="#" class="button__link" style="color: #FFFFFF; text-decoration: none; background-color: #0048A5; display: inline-block;"><span class="button__text" style="color: #FFFFFF; text-decoration: none;">Call to action</span></a></td>
                                                         </tr>
                                                       </table>
                                                     </td>
@@ -271,8 +345,8 @@
                                       <div class="row" style="background-color: #FFFFFF; padding: 24px 36px;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top"> <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/c8d86a99-a217-4f2f-ad55-5b640cce72e7.jpg" alt="Event at Korbel" border="0" class="img__block" style="display: block; max-width: 100%;"
-                                              /> </td>
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top"> <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/c8d86a99-a217-4f2f-ad55-5b640cce72e7.jpg?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=Gz%2FMJR%2FbROqhLHddnYE2jCnauWo%3D"
+                                                alt="Event at Korbel" width="568" height="243.167" border="0" class="img__block" style="display: block; max-width: 100%;" /> </td>
                                           </tr>
                                         </table>
                                       </div>
@@ -287,7 +361,8 @@
                                   </tr>
                                 </table> <!--[if mso | IE]> </td>
                             </tr>
-                          </table> <![endif]--> </div>
+                          </table> <![endif]--> 
+                        </div>
                         <!-- Events calendar -->
                         <div class="calendar block" style="width: 100%;"> <!--[if mso | IE]>
                           <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
@@ -306,40 +381,93 @@
                                           </tr>
                                         </table>
                                       </div>
-                                      <!-- Repeatable calendar row -->
-                                      <div class="calendar-row row" style="background-color: #FFFFFF; padding: 24px 36px; padding-bottom: 0; padding-top: 0;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="211.2" style="width: 33%" align="left" valign="top"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center;">
-                            November 11<span class="rborder"> </span> </span> <span class="upcoming-body" style="background-color: #F7F7F7; border: solid #8B2332; border-width: 0 4px 4px; display: table-cell; height: 224px; margin: 0; padding: 16px; text-align: center; width: 100%; border-right-width: 0;">
-                            <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; margin: 20px 0 24px; color: #8B2332; font-size: 21px;">China Town Hall</h3>
-                            <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">CCUSC
-                                <br/>12-2pm</p>
-                        </span> </td>
-                                            <td class="column col-sm-12" width="211.2" style="width: 33%" align="left" valign="top"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center;">
-                            November 26<span class="rborder"> </span> </span> <span class="upcoming-body" style="background-color: #F7F7F7; border: solid #8B2332; border-width: 0 4px 4px; display: table-cell; height: 224px; margin: 0; padding: 16px; text-align: center; width: 100%; border-right-width: 0;">
-                            <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; margin: 20px 0 24px; color: #8B2332; font-size: 21px;">Art, Amnesia &amp; Memory China's Battle with History</h3>
-                            <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">CCUSC
-                                <br/>12-2pm</p>
-                        </span> </td>
-                                            <td class="3rd-col column col-sm-12" width="211.2" style="border-right: 4px solid #8B2332;width: 33%" align="left" valign="top"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center;">
-                            December 12
-                        </span> <span class="upcoming-body" style="background-color: #F7F7F7; border: solid #8B2332; border-width: 0 4px 4px; display: table-cell; height: 224px; margin: 0; padding: 16px; text-align: center; width: 100%; border-right-width: 0;">
-                            <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; margin: 20px 0 24px; color: #8B2332; font-size: 21px;">Korbel in DC/Geneva/Vienna</h3>
-                            <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">Info Session
-                                <br/>12-2pm</p>
-                        </span> </td>
-                                          </tr>
-                                        </table>
+                                      <!-- Repeatable mailchimp calendar row columns -->
+                                      <div class="mc-calendar-row">
+                                        <div class="calendar-col row" style="background-color: #FFFFFF; padding: 24px 36px; padding-bottom: 0; padding-top: 0;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="211.2" style="background-color: #F7F7F7; text-align: center; border-bottom: 4px solid #8B2332; border-left: 4px solid #8B2332;width: 33%" align="center" valign="top" bgcolor="#F7F7F7">
+                                              <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center;">
+                                November 11<span class="rborder"> </span> </span>
+                                                <div class="upcoming-body" style="background-color: #F7F7F7; text-align: center; display: block; height: 264px; margin: 0; min-width: 152px; padding: 12px 0;">
+                                                  <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; margin: 20px 0 24px; padding: 0 8px; color: #8B2332; font-size: 21px; text-align: center;">Really long test title that will mess up the layout, with Dr. Cornel West</h3>
+                                                  <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; text-align: center;">CCUSC <br/>12-2pm</p>
+                                                </div>
+                                              </td>
+                                              <td class="column col-sm-12" width="211.2" style="background-color: #F7F7F7; text-align: center; border-bottom: 4px solid #8B2332; border-left: 4px solid #8B2332;width: 33%" align="center" valign="top" bgcolor="#F7F7F7">
+                                              <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center;">
+                                November 26<span class="rborder"> </span> </span>
+                                                <div class="upcoming-body" style="background-color: #F7F7F7; text-align: center; display: block; height: 264px; margin: 0; min-width: 152px; padding: 12px 0;">
+                                                  <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; margin: 20px 0 24px; padding: 0 8px; color: #8B2332; font-size: 21px; text-align: center;">Art, Amnesia &amp; Memory China's Battle with History</h3>
+                                                  <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; text-align: center;">CCUSC <br/>12-2pm</p>
+                                                </div>
+                                              </td>
+                                              <td class="third-col column col-sm-12" width="211.2" style="background-color: #F7F7F7; text-align: center; border-bottom: 4px solid #8B2332; border-left: 4px solid #8B2332; border-right: 4px solid #8B2332;width: 33%"
+                                                align="center" valign="top" bgcolor="#F7F7F7"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center;">
+                                December 12
+                            </span>
+                                                <div class="upcoming-body" style="background-color: #F7F7F7; text-align: center; display: block; height: 264px; margin: 0; min-width: 152px; padding: 12px 0;">
+                                                  <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; margin: 20px 0 24px; padding: 0 8px; color: #8B2332; font-size: 21px; text-align: center;">Korbel in DC/Geneva/Vienna</h3>
+                                                  <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; text-align: center;">Info Session <br/>12-2pm</p>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
                                       </div>
-                                      <div class="upcoming-footer row" style="background-color: #FFFFFF; padding: 24px 36px;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
-                                              <p class="callout text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 16px; border-left: 4px solid #8B2332; color: #8B2332; font-weight: 600;">That's just a few of our events. Make sure to check our <a href="https://www.du.edu/korbel/about/events/index.html" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">full calendar</span></a>.</p>
-                                            </td>
-                                          </tr>
-                                        </table>
+                                      <!-- Repeatable regroup calendar rows -->
+                                      <div class="regroup-calendar-row">
+                                        <div class="calendar-row row" style="background-color: #FFFFFF; padding: 24px 36px; padding-bottom: 0; padding-top: 0;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="background-color: #F7F7F7; text-align: center;width: 100%" align="center" valign="top" bgcolor="#F7F7F7"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center; padding-top: 12px;">
+                                November 11
+                            </span>
+                                                <div class="upcoming-body" style="background-color: #F7F7F7; text-align: center; display: block; border-bottom: 4px solid #8B2332; border-left: 4px solid #8B2332; border-right: 4px solid #8B2332;">
+                                                  <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; padding: 0 8px; color: #8B2332; font-size: 21px; text-align: center; padding-top: 20px; padding-bottom: 24px; margin: 0;">Really long test title that will mess up the layout, with Dr. Cornel West</h3>
+                                                  <p class="text p" style="display: block; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; text-align: center; padding-top: 4px; padding-bottom: 24px; margin: 0;">CCUSC <br/>12-2pm</p>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="calendar-row row" style="background-color: #FFFFFF; padding: 24px 36px; padding-bottom: 0; padding-top: 0;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="background-color: #F7F7F7; text-align: center;width: 100%" align="center" valign="top" bgcolor="#F7F7F7"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center; padding-top: 12px;">
+                                November 26
+                            </span>
+                                                <div class="upcoming-body" style="background-color: #F7F7F7; text-align: center; display: block; border-bottom: 4px solid #8B2332; border-left: 4px solid #8B2332; border-right: 4px solid #8B2332;">
+                                                  <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; padding: 0 8px; color: #8B2332; font-size: 21px; text-align: center; padding-top: 20px; padding-bottom: 24px; margin: 0;">Art, Amnesia &amp; Memory China's Battle with History</h3>
+                                                  <p class="text p" style="display: block; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; text-align: center; padding-top: 4px; padding-bottom: 24px; margin: 0;">CCUSC <br/>12-2pm</p>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="calendar-row row" style="background-color: #FFFFFF; padding: 24px 36px; padding-bottom: 0; padding-top: 0;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="third-col column col-sm-12" width="640" style="background-color: #F7F7F7; text-align: center;width: 100%" align="center" valign="top" bgcolor="#F7F7F7"> <span class="upcoming-header" style="background-color: #8B2332; color: #FFFFFF; display: block; font-size: 22.5px; font-weight: 100; letter-spacing: .25px; padding: 16px 0 16px 16px; text-align: center; padding-top: 12px;">
+                                December 12
+                            </span>
+                                                <div class="upcoming-body" style="background-color: #F7F7F7; text-align: center; display: block; border-bottom: 4px solid #8B2332; border-left: 4px solid #8B2332; border-right: 4px solid #8B2332;">
+                                                  <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; padding: 0 8px; color: #8B2332; font-size: 21px; text-align: center; padding-top: 20px; padding-bottom: 24px; margin: 0;">Korbel in DC/Geneva/Vienna</h3>
+                                                  <p class="text p" style="display: block; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; text-align: center; padding-top: 4px; padding-bottom: 24px; margin: 0;">Info Session <br/>12-2pm</p>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="upcoming-footer row" style="background-color: #FFFFFF; padding: 24px 36px;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <p class="callout text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 16px; border-left: 4px solid #8B2332; color: #8B2332; font-weight: 600;">Check our <a href="https://www.du.edu/korbel/about/events/index.html" class="a"><span class="a__text">events calendar</span></a> for more info and rsvp links.</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
                                       </div>
                                       <div class="section-divider row" style="background-color: transparent; border-top: 2px solid #0048A5; margin-bottom: 24px; padding: 54px 0 48px;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
@@ -366,7 +494,6 @@
                                           <tr class="row__row">
                                             <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
                                               <h2 class="h2-rule header h2" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 36px; margin: 26px 0 30px; padding-bottom: 14px; margin-bottom: 54px;">Recent Stories</h2>
-                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">These stories deserve your attention.</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -375,12 +502,12 @@
                                       <div class="left-story row" style="background-color: #FFFFFF; padding: 24px 36px; border-top: 2px solid #F4F3ED;">
                                         <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                           <tr class="row__row">
-                                            <td class="story-thumb column col-sm-12" width="320" style="width: 50%" align="left" valign="top"> <a href="https://www.du.edu/korbel/about/news/2017-pardis-takeaknee.html" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">
-                            <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/84aebbad-0fdc-49b8-a9dd-bfdb07e6ac31.jpg" alt="What Take a Knee Means in Higher Ed" border="0" class="img__block" style="display: block; max-width: 100%;"/>
+                                            <td class="story-thumb column col-sm-12" width="320" style="padding-right: 36px;width: 50%" align="left" valign="top"> <a href="https://www.du.edu/korbel/about/news/2017-pardis-takeaknee.html" target="_blank" class="a"><span class="a__text">
+                            <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/84aebbad-0fdc-49b8-a9dd-bfdb07e6ac31.jpg?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=hUMM83lWJEp%2Fgr6bHEoG5jVVy18%3D" alt="News story thumbnail" width="266" height="216.767" border="0" class="img__block" style="display: block; max-width: 100%;"/>
                         </span></a> </td>
                                             <td class="column col-sm-12" width="320" style="width: 50%" align="left" valign="top">
                                               <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Header</h3>
-                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">#takeaknee is redefining athletes as activists in popular culture.</p> <a href="" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;"><strong>Learn more</strong></span></a>                                              </td>
+                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">#takeaknee is redefining athletes as activists in popular culture.</p> <a href="https://www.du.edu/korbel/about/news/2017-pardis-takeaknee.html" target="_blank" class="a"><span class="a__text"><strong>Learn more</strong></span></a>                                              </td>
                                           </tr>
                                         </table>
                                       </div>
@@ -390,9 +517,9 @@
                                           <tr class="row__row">
                                             <td class="column col-sm-12" width="320" style="width: 50%" align="left" valign="top">
                                               <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Another header</h3>
-                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">We're welcoming our new acting dean, join her for Breakfast with the Dean this week.</p> <a href="" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;"><strong>Join us</strong></span></a>                                              </td>
-                                            <td class="story-thumb column col-sm-12" width="320" style="width: 50%" align="left" valign="top"> <a href="http://news.du.edu/meet-pardis-mahdavi/" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">
-                            <img src="https://gallery.mailchimp.com/c3bfa98dc6ba8ad6bbee23fd7/images/cd957870-5adc-4f51-8181-e3cfac603ef1.jpg" alt="Pardis Mahdavi, Korbel&#39;s new acting Dean" border="0" class="img__block" style="display: block; max-width: 100%;"/>
+                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">We're welcoming our new acting dean, join her for Breakfast with the Dean this week.</p> <a href="http://news.du.edu/meet-pardis-mahdavi/" target="_blank" class="a"><span class="a__text"><strong>Join us</strong></span></a>                                              </td>
+                                            <td class="story-thumb column col-sm-12" width="320" style="width: 50%" align="left" valign="top"> <a href="http://news.du.edu/meet-pardis-mahdavi/" target="_blank" class="a"><span class="a__text">
+                            <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/cd957870-5adc-4f51-8181-e3cfac603ef1.jpg?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=C2QK2ISGbC4vz2ewVLBzhgG%2F9qY%3D" alt="News story thumbnail" width="266" height="216.767" border="0" class="img__block" style="display: block; max-width: 100%; padding-left: 36px;"/>
                         </span></a> </td>
                                           </tr>
                                         </table>
@@ -409,6 +536,82 @@
                                 </table> <!--[if mso | IE]> </td>
                             </tr>
                           </table> <![endif]--> </div>
+                        <!-- News row with repeatable list items -->
+                        <div class="news block" style="width: 100%;"> <!--[if mso | IE]>
+                          <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                            <tr>
+                              <td> <![endif]-->
+                                <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr class="block__row">
+                                    <td class="block__cell" width="100%" align="left" valign="top">
+                                      <div class="row" style="background-color: #FFFFFF; padding: 0;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; font-size: 24px; margin: 20px 0 24px; background-color: #7E0032; margin-bottom: 0; padding: 16px 18px; color: #FFFFFF; font-weight: 100; letter-spacing: .5px; margin-top: 0;">News</h3>
+                                              <ul class="news-list text ul" style="margin-left: 20px; margin-top: 16px; margin-bottom: 16px; list-style-type: disc; color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 3px 24px 21px; background-color: #EAE9E5; margin: 0;">
+                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; padding: 12px; list-style: none; background-color: #FAFAFA; margin-top: 18px;">Floyd Ciruli was awarded the Denver Mayor’s Award for Leadership in the Arts for his 30 years of support for the creation and voter approval of the Scientific and Cultural Facilities District (SCFD). Read
+                                                  the announcement and watch the video <a href="http://www.artsandvenuesdenver.com/events-programs/mayors-awards/mayors-awards-for-excellence-in-arts-culture-2017-winners" class="a"><span class="a__text">here</span></a>.</li>
+                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; padding: 12px; list-style: none; background-color: #FAFAFA; margin-top: 18px;">Another test. Denver Mayor’s Award for Leadership in the Arts for his 30 years of support for the creation and voter approval of the Scientific and Cultural Facilities District (SCFD). Read the announcement
+                                                  and watch the video <a href="http://www.artsandvenuesdenver.com/events-programs/mayors-awards/mayors-awards-for-excellence-in-arts-culture-2017-winners" class="a"><span class="a__text">here</span></a>.</li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div class="section-divider row" style="background-color: transparent; border-top: 2px solid #0048A5; margin-bottom: 24px; padding: 30px 0 24px;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top"> </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table> <!--[if mso | IE]> </td>
+                            </tr>
+                          </table> <![endif]--> 
+                        </div>
+                        <!-- Media roundup with repeatable list items -->
+                        <div class="media-roundup block" style="width: 100%;"> <!--[if mso | IE]>
+                          <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
+                            <tr>
+                              <td> <![endif]-->
+                                <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr class="block__row">
+                                    <td class="block__cell" width="100%" align="left" valign="top">
+                                      <div class="row" style="background-color: #FFFFFF; padding: 0;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; font-size: 24px; margin: 20px 0 24px; padding: 16px 18px; color: #FFFFFF; font-weight: 100; letter-spacing: .5px; margin-top: 0; background-color: #0048A5; margin-bottom: 4px;">Media Roundup</h3>
+                                              <p class="lead text p" style="display: block; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; background-color: #FFFFFF; margin: 0; padding: 16px 18px;">Visit our <a href="http://www.du.edu/korbel/about/news/index.html" title="Newsroom" target="_blank" class="a"><span class="a__text">Newsroom</span></a> for the School's news stories and press releases, and
+                                                <a href="http://www.du.edu/korbel/about/news/inthenews.html" title="Faculty in the news" target="_blank" class="a"><span class="a__text">Josef Korbel School and Faculty in the News</span></a>. Send your
+                                                Korbel School media mentions to <a href="mailto: korbel.comms@du.edu" title="Email Korbel Communications" target="_blank" class="a"><span class="a__text">Korbel.Comms@du.edu</span></a>. Online links are
+                                                included when available.</p>
+                                              <ul class="media-list text ul" style="margin-left: 20px; margin-top: 16px; margin-bottom: 16px; list-style-type: disc; color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 3px 24px 21px; background-color: #EAE9E5; margin: 0;">
+                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; padding: 12px; list-style: none; background-color: #FAFAFA; margin-top: 18px;">“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510" class="a"><span class="a__text">Trump’s Attacks on #TakeaKnee and DACA Spurred Hundreds of Protests in October</span></a>,”
+                                                  Erica Chenoweth, Washington Post, December 1, 2017</li>
+                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A; padding: 12px; list-style: none; background-color: #FAFAFA; margin-top: 18px;">“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510" class="a"><span class="a__text">New test item that is different</span></a>,”
+                                                  Erica Chenoweth, Washington Post, December 1, 2017</li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div class="section-divider row" style="background-color: transparent; border-top: 2px solid #0048A5; margin-bottom: 24px; padding: 30px 0 24px;">
+                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                          <tr class="row__row">
+                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top"> </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table> <!--[if mso | IE]> </td>
+                            </tr>
+                          </table> <![endif]--> 
+                        </div>
                         <!-- Careers -->
                         <div class="careers block" style="width: 100%;"> <!--[if mso | IE]>
                           <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
@@ -424,55 +627,17 @@
                                               <h2 class="h2-rule header h2" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 36px; margin: 26px 0 30px; padding-bottom: 14px; margin-bottom: 54px;">Korbel Careers</h2>
                                               <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">This week's newest jobs and internships for students and alumni.</p>
                                               <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Top Job Openings</h3>
-                                              <ol class="text ol" style="color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382;">
+                                              <ul class="text ul" style="margin-left: 20px; margin-top: 16px; margin-bottom: 16px; padding: 0; list-style-type: disc; color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; margin: 24px 30px;">
                                                 <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;"><strong>FBI</strong>, Washington, DC, Internal Processes Reviewer</li>
                                                 <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;"><strong>Boulder Policy Peeps</strong>, Boulder, CO, Policy Analyst</li>
                                                 <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;"><strong>Mega Millionaire</strong>, Beijing, Rich Dude</li>
-                                              </ol>
-                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Internship of the Week</h3>
-                                              <ol class="text ol" style="color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382;">
-                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;"><strong>Apple Inc.</strong>, San Francisco, CA, Global Engagement Strategists</li>
-                                              </ol>
-                                              <p class="callout text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 16px; border-left: 4px solid #8B2332; color: #8B2332; font-weight: 600;">
-                                              Want more? Browse our <a href="https://www.du.edu/pioneercareers" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">full job listings</span></a>.</p>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                      <div class="section-divider row" style="background-color: transparent; border-top: 2px solid #0048A5; margin-bottom: 24px; padding: 54px 0 48px;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top"> </td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </table> <!--[if mso | IE]> </td>
-                            </tr>
-                          </table> <![endif]--> </div>
-                        <!-- News -->
-                        <div class="news block" style="width: 100%;"> <!--[if mso | IE]>
-                          <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
-                            <tr>
-                              <td> <![endif]-->
-                                <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
-                                  <tr class="block__row">
-                                    <td class="block__cell" width="100%" align="left" valign="top">
-                                      <div class="row" style="background-color: #FFFFFF; padding: 24px 36px;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
-                                              <h2 class="h2-rule header h2" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 36px; margin: 26px 0 30px; padding-bottom: 14px; margin-bottom: 54px;">In the News</h2>
-                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">Korbel Faculty are in the news nearly every day. Here's a summary of the week's headlines in which they were featured. </p>
-                                              <ul class="text ul" style="margin-left: 20px; margin-top: 16px; margin-bottom: 16px; padding: 0; list-style-type: disc; color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382;">
-                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">MSNBC</li>
-                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">NYT</li>
-                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">Politico</li>
-                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">Fox</li>
-                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;">Etc</li>
                                               </ul>
-                                              <p class="callout text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 16px; border-left: 4px solid #8B2332; color: #8B2332; font-weight: 600;">Need older news? View our <a href="https://www.du.edu/korbel/about/news/inthenews.html" target="_blank" class="a" style="color: #0048A5;"><span class="a__text" style="color: #0048A5;">archives</span></a>.</p>
+                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; color: #2B2A2A; line-height: 1.1; font-size: 24px; margin: 20px 0 24px;">Internship of the Week</h3>
+                                              <ul class="text ul" style="margin-left: 20px; margin-top: 16px; margin-bottom: 16px; padding: 0; list-style-type: disc; color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; margin: 24px 30px;">
+                                                <li class="text li" style="font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; color: #5B5A5A;"><strong>Apple Inc.</strong>, San Francisco, CA, Global Engagement Strategists</li>
+                                              </ul>
+                                              <p class="callout text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 18px; line-height: 1.382; padding: 16px; border-left: 4px solid #8B2332; color: #8B2332; font-weight: 600;">
+                                              Want more? Browse our <a href="https://www.du.edu/pioneercareers" target="_blank" class="a"><span class="a__text">full job listings</span></a>.</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -497,7 +662,7 @@
                                 <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="block__row">
                                     <td class="block__cell" width="100%" align="left" valign="top">
-                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
                                         <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                           <tr>
                                             <td> <![endif]-->
@@ -508,25 +673,26 @@
                                                       <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                                         <tr class="row__row">
                                                           <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                                            <div class="quote block" style="width: 100%; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                            <div class="quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
-                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">&ldquo;</span>Far
+                                                                          and away the best prize that life has to offer is the chance to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600; margin-left: 6px;">&rdquo;</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
                                                               </table> <![endif]--> </div>
-                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                            <div class="quote-source block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; margin-top: 24px; color: #F7F7F7; letter-spacing: .5px;">
+                                                            <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
@@ -540,7 +706,7 @@
                                               </table> <!--[if mso | IE]> </td>
                                           </tr>
                                         </table> <![endif]--> </div>
-                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;">
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;">
                                       <!--[if mso | IE]>
                                         <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                           <tr>
@@ -552,25 +718,26 @@
                                                       <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                                         <tr class="row__row">
                                                           <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                                            <div class="quote block" style="width: 100%; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                            <div class="quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
-                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">&ldquo;</span>Far
+                                                                          and away the best prize that life has to offer is the chance to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600; margin-left: 6px;">&rdquo;</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
                                                               </table> <![endif]--> </div>
-                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #F7F7F7; letter-spacing: .5px;"> <!--[if mso | IE]>
+                                                            <div class="quote-source block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; margin-top: 24px; color: #F7F7F7; letter-spacing: .5px;">
+                                                            <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
@@ -596,7 +763,7 @@
                                 <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="block__row">
                                     <td class="block__cell" width="100%" align="left" valign="top">
-                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;"> <!--[if mso | IE]>
                                         <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                           <tr>
                                             <td> <![endif]-->
@@ -607,25 +774,26 @@
                                                       <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                                         <tr class="row__row">
                                                           <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                                            <div class="quote block" style="width: 100%; color: #7E0026;"> <!--[if mso | IE]>
+                                                            <div class="quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; color: #7E0026;"> <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
-                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">&ldquo;</span>Far
+                                                                          and away the best prize that life has to offer is the chance to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600; margin-left: 6px;">&rdquo;</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
                                                               </table> <![endif]--> </div>
-                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #7E0026;"> <!--[if mso | IE]>
+                                                            <div class="quote-source block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; margin-top: 24px; color: #7E0026;">
+                                                            <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
@@ -639,7 +807,7 @@
                                               </table> <!--[if mso | IE]> </td>
                                           </tr>
                                         </table> <![endif]--> </div>
-                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;">
+                                      <div class="pull-quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-size: 30px; font-style: italic; font-weight: 100; line-height: 1.382;">
                                       <!--[if mso | IE]>
                                         <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                           <tr>
@@ -651,25 +819,26 @@
                                                       <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                                                         <tr class="row__row">
                                                           <td class="column col-sm-12" width="640" style="padding-left: 16px; padding-right: 16px;width: 100%" align="left" valign="top">
-                                                            <div class="quote block" style="width: 100%; color: #0048A5;"> <!--[if mso | IE]>
+                                                            <div class="quote block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; color: #0048A5;"> <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-weight: 600;">&ldquo;</span>Far and away the best prize that life has to offer is the chance
-                                                                          to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-weight: 600; margin-left: 6px;">&rdquo;</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="lquote" style="margin-left: -18px; margin-right: 12px; color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">&ldquo;</span>Far
+                                                                          and away the best prize that life has to offer is the chance to work hard at work worth doing. <span class="rquote" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600; margin-left: 6px;">&rdquo;</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
                                                               </table> <![endif]--> </div>
-                                                            <div class="quote-source block" style="width: 100%; margin-top: 24px; color: #0048A5;"> <!--[if mso | IE]>
+                                                            <div class="quote-source block" style="width: 100%; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; margin-top: 24px; color: #0048A5;">
+                                                            <!--[if mso | IE]>
                                                               <table class="block__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%" width="640">
                                                                 <tr>
                                                                   <td> <![endif]-->
                                                                     <table class="block__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                                                       <tr class="block__row">
-                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span> </td>
+                                                                        <td class="block__cell" width="100%" align="left" valign="top"> <span class="emdash" style="color: #FDB813; font-family: 'Garamond','Palatino','Times New Roman','Times','Georgia',serif; font-weight: 600;">—</span> <span class="author">Theodore Roosevelt</span>                                                                          </td>
                                                                       </tr>
                                                                     </table> <!--[if mso | IE]> </td>
                                                                 </tr>
@@ -708,62 +877,127 @@
                                 <table class="container__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
                                   <tr class="container__row">
                                     <td class="container__cell" width="100%" align="left" valign="top">
-                                      <div class="social-intro row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
-                                              <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; font-size: 24px; margin: 20px 0 24px; margin-bottom: 0; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">Keep in touch. Follow us:</h3>
-                                            </td>
-                                          </tr>
-                                        </table>
+                                      <!-- Mailchimp footer with merge tags and list unsubscribe -->
+                                      <div class="mc-footer">
+                                        <div class="social-intro row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; font-size: 24px; margin: 20px 0 24px; margin-bottom: 0; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">Keep in touch. Follow us:</h3>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="social-wrapper row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.facebook.com/josefkorbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-facebook-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=gj%2BsRwzm0zsXggfgxOscgQKT8XU%3D" alt="Facebook icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://twitter.com/josefkorbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-twitter-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=RkpBoOPO%2BglDj92vL5ovp7FXGmQ%3D" alt="Twitter icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.instagram.com/thejosefkorbelschool/" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-instagram-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=ZU%2B4d6y3iJGG3P1Wbn09BqJJRy4%3D" alt="Instagram icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.du.edu/korbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-link-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=e%2BouW4DeXDMnEPxvWhCHltvpjQ4%3D" alt="Website link icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <div class="hr" style="margin: 0 auto; width: 100%;"> <!--[if mso | IE]>
+                                                  <table class="hr__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-right: auto; margin-left: auto; width: 100%;" width="100%" align="center">
+                                                    <tr>
+                                                      <td> <![endif]-->
+                                                        <table class="hr__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                                          <tr class="hr__row">
+                                                            <td class="hr__cell" width="100%" align="left" valign="top" style="border-top: 1px solid #9A9A9A;">&nbsp;</td>
+                                                          </tr>
+                                                        </table> <!--[if mso | IE]> </td>
+                                                    </tr>
+                                                  </table> <![endif]--> </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="info-wrapper row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; line-height: 1.382; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                                ©*|CURRENT_YEAR|* Josef Korbel School of International Studies, All rights reserved. <br/> *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|* <br/> <br/> <strong>Our mailing address is:</strong> <br/> Anna and
+                                                  John J. Sie International Relations Complex <br/> University of Denver <br/> 2201 S. Gaylord St. <br/> Denver, CO 80208 <br/> <br/> Want to change how you receive these emails? <br/> You can <a href="*|UPDATE_PROFILE|*"
+                                                    class="a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">update your preferences</span></a> or <a href="*|UNSUB|*" class="a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">unsubscribe from this list</span></a>.
+                                                  </p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
                                       </div>
-                                      <div class="social-wrapper row" style="padding: 24px 0; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.facebook.com/josefkorbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-facebook-96.png" alt="Facebook icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; height: 48px;"/>
-                        </span></a> </td>
-                                            <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://twitter.com/josefkorbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-twitter-96.png" alt="Twitter icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; height: 48px;"/>
-                        </span></a> </td>
-                                            <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.instagram.com/thejosefkorbelschool/" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-instagram-96.png" alt="Instagram icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; height: 48px;"/>
-                        </span></a> </td>
-                                            <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.du.edu/korbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
-                            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-link-96.png" alt="Josef Korbel School of International Studies website link icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; height: 48px;"/>
-                        </span></a> </td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                      <div class="row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
-                                              <div class="hr" style="margin: 0 auto; width: 100%;"> <!--[if mso | IE]>
-                                                <table class="hr__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-right: auto; margin-left: auto; width: 100%;" width="100%" align="center">
-                                                  <tr>
-                                                    <td> <![endif]-->
-                                                      <table class="hr__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
-                                                        <tr class="hr__row">
-                                                          <td class="hr__cell" width="100%" align="left" valign="top" style="border-top: 1px solid #9A9A9A;">&nbsp;</td>
-                                                        </tr>
-                                                      </table> <!--[if mso | IE]> </td>
-                                                  </tr>
-                                                </table> <![endif]--> </div>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                      <div class="info-wrapper row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
-                                        <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-                                          <tr class="row__row">
-                                            <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
-                                              <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; line-height: 1.382; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
-                                              Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved. <br/> *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|* <br/> <br/> <strong>Our mailing address is:</strong> <br/> *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
-                                                <br/> <br/> Want to change how you receive these emails? <br/> You can <a href="*|UPDATE_PROFILE|*" class="a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">update your preferences</span></a>                                                or <a href="*|UNSUB|*" class="a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">unsubscribe from this list</span></a>. </p>
-                                            </td>
-                                          </tr>
-                                        </table>
+                                      <!-- Regroup Footer (no mailchimp tags or unsubscribe) -->
+                                      <div class="regroup-footer">
+                                        <div class="social-intro row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <h3 class="header h3" style="font-family: Helvetica,Arial,sans-serif; line-height: 1.1; font-size: 24px; margin: 20px 0 24px; margin-bottom: 0; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">Keep in touch. Follow us:</h3>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="social-wrapper row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.facebook.com/josefkorbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-facebook-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=gj%2BsRwzm0zsXggfgxOscgQKT8XU%3D" alt="Facebook icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://twitter.com/josefkorbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-twitter-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=RkpBoOPO%2BglDj92vL5ovp7FXGmQ%3D" alt="Twitter icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.instagram.com/thejosefkorbelschool/" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-instagram-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=ZU%2B4d6y3iJGG3P1Wbn09BqJJRy4%3D" alt="Instagram icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                              <td class="column col-sm-12" width="160" style="width: 25%" align="left" valign="top"> <a href="https://www.du.edu/korbel" target="_blank" class="social-icon a" style="color: #FAFAFA;"><span class="a__text" style="color: #FAFAFA;">
+                                <img src="http://s3.amazonaws.com/collegewikis/user_mce_images/1605952/outline-light-link-96.png?AWSAccessKeyId=AKIAIWWG2L6A6RKA3X3A&amp;Expires=2147407200&amp;Signature=e%2BouW4DeXDMnEPxvWhCHltvpjQ4%3D" alt="Website link icon" width="48" height="48" border="0" class="img__block" style="display: block; max-width: 100%; width: 48px; padding-left: 66px; height: 48px;"/>
+                            </span></a> </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <div class="hr" style="margin: 0 auto; width: 100%;"> <!--[if mso | IE]>
+                                                  <table class="hr__table__ie" role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-right: auto; margin-left: auto; width: 100%;" width="100%" align="center">
+                                                    <tr>
+                                                      <td> <![endif]-->
+                                                        <table class="hr__table" role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                                          <tr class="hr__row">
+                                                            <td class="hr__cell" width="100%" align="left" valign="top" style="border-top: 1px solid #9A9A9A;">&nbsp;</td>
+                                                          </tr>
+                                                        </table> <!--[if mso | IE]> </td>
+                                                    </tr>
+                                                  </table> <![endif]--> </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="info-wrapper row" style="padding: 24px 36px; background-color: #313133; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                          <table class="row__table" width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                            <tr class="row__row">
+                                              <td class="column col-sm-12" width="640" style="width: 100%" align="left" valign="top">
+                                                <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; line-height: 1.382; font-size: 16.5px; font-weight: 100; letter-spacing: .5px; text-align: center; color: #FAFAFA;">
+                                                ©2018 Josef Korbel School of International Studies, All rights reserved. <br/> <br/> <strong>Our mailing address is:</strong> <br/> Anna and John J. Sie International Relations Complex <br/> University of
+                                                  Denver <br/> 2201 S. Gaylord St. <br/> Denver, CO 80208 </p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
                                       </div>
                                     </td>
                                   </tr>
