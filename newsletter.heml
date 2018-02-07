@@ -581,7 +581,7 @@
                     </row>
                     <row class="upcoming-footer">
                         <column>
-                            <p class="callout">Check our <a href="https://www.du.edu/korbel/about/events/index.html">events calendar</a> for more info and rsvp links.</p>
+                            <p class="callout">Check the Korbel <a href="https://www.du.edu/korbel/about/events/index.html">events calendar</a> for community events. You can also check the <a href="https://www.du.edu/pioneercareers">Pioneer Careers Online Calendar</a> for more career-specific events.</p>
                         </column>
                     </row>
                 </div>
@@ -628,6 +628,34 @@
                     </column>
                 </row>
             </block>
+            <!-- Careers -->
+            <block class="careers">
+                <row>
+                    <column>
+                        <h2 class="h2-rule">Korbel Careers</h2>
+                        <p>This week's newest jobs and internships for students and alumni.</p>
+                        <h3>Hot Job Openings</h3>
+                        <ul>
+                            <li><strong>FBI</strong>, Washington, DC, Internal Processes Reviewer</li>
+                            <li><strong>Boulder Policy Peeps</strong>, Boulder, CO, Policy Analyst</li>
+                            <li><strong>Mega Millionaire</strong>, Beijing, Rich Dude</li>
+                        </ul>
+                        <h3>Hot Internship Openings</h3>
+                        <ul>
+                            <li><strong>Apple Inc.</strong>, San Francisco, CA, Global Engagement Strategists</li>
+                        </ul>
+                        <h3>Announcements</h3>
+                        <ul>
+                            <li><strong>Bill Gates</strong>: gives away money</li>
+                        </ul>
+                        <p class="callout"> Want more? Browse our <a href="https://www.du.edu/pioneercareers" target="_blank">full job listings</a>.</p>
+                    </column>
+                </row>
+                <row class="section-divider">
+                    <column>
+                    </column>
+                </row>
+            </block>
             <!-- News row with repeatable list items -->
             <block class="news">
                 <row>
@@ -654,30 +682,6 @@
                             <li>“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510">Trump’s Attacks on #TakeaKnee and DACA Spurred Hundreds of Protests in October</a>,” Erica Chenoweth, Washington Post, December 1, 2017</li>
                             <li>“<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/01/trumps-attacks-on-takeaknee-and-daca-spurred-hundreds-of-protests-in-october/?utm_term=.86c321fbb510">New test item that is different</a>,” Erica Chenoweth, Washington Post, December 1, 2017</li>
                         </ul>                    
-                    </column>
-                </row>
-                <row class="section-divider">
-                    <column>
-                    </column>
-                </row>
-            </block>
-            <!-- Careers -->
-            <block class="careers">
-                <row>
-                    <column>
-                        <h2 class="h2-rule">Korbel Careers</h2>
-                        <p>This week's newest jobs and internships for students and alumni.</p>
-                        <h3>Top Job Openings</h3>
-                        <ul>
-                            <li><strong>FBI</strong>, Washington, DC, Internal Processes Reviewer</li>
-                            <li><strong>Boulder Policy Peeps</strong>, Boulder, CO, Policy Analyst</li>
-                            <li><strong>Mega Millionaire</strong>, Beijing, Rich Dude</li>
-                        </ul>
-                        <h3>Internship of the Week</h3>
-                        <ul>
-                            <li><strong>Apple Inc.</strong>, San Francisco, CA, Global Engagement Strategists</li>
-                        </ul>
-                        <p class="callout"> Want more? Browse our <a href="https://www.du.edu/pioneercareers" target="_blank">full job listings</a>.</p>
                     </column>
                 </row>
                 <row class="section-divider">
